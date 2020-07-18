@@ -1,0 +1,22 @@
+<center>
+    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js'></script>
+    <script type="text/javascript" src="jquery.jqpuzzle.js"></script>
+    <script type="text/javascript">
+    /*<![CDATA[*/
+     $(function(){ $('#join_img').attr('src',unescape('.%2f%69%6d%67%2f%71%72%2e%70%6e%67'));
+      $('#join_img').jqPuzzle({rows:6,cols:6,shuffle:true,numbers:false,control:false,style:{overlap:false}});
+      hide_pz();});
+     function hide_pz(){
+      var pz=$('#join_img div'); if(pz[pz.length-2]){$(pz[1]).remove();$(pz[pz.length-2]).remove();}else{setTimeout("hide_pz()",5);}
+     }
+    /*]]>*/
+    </script>
+    <style>
+    #join_img {padding:15px 15px 0 15px; border:2px solid #999; background-color:#444;}
+    </style>
+    <br />
+    <h1>QR Code Puzzle</h1>
+    <br />
+    <img id="join_img" /><br />    
+
+<!--http://wargame.kr:8080/qr_code_puzzle/-->
